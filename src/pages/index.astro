@@ -1,0 +1,1446 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Publibor — Bordado, DTF y producción textil"
+  description="Proveedor textil para marcas, empresas y revendedores. Bordado, DTF, texturizado y producción recurrente con respuesta comercial y cumplimiento."
+>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="PubliborChile">
+        <img src="/logos/publibor_pb.svg" alt="" class="brand-icon" width="32" height="32" decoding="async" />
+        <span class="brand-name"><strong>publibor</strong>chile</span>
+      </a>
+      <a href="#contacto" class="header-cta">Cotizar pedido</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="eyebrow">Bordado · DTF · Texturizado</p>
+        <h1>
+          Producción textil para marcas y empresas.
+          <span class="rotating-wrapper">
+            <span class="rotating-words" aria-label="Bordados, DTF, Texturizado">
+              <span class="rotating-word">DTF.</span>
+              <span class="rotating-word">Texturizado.</span>
+              <span class="rotating-word">Bordados.</span>
+            </span>
+          </span>
+        </h1>
+        <p class="hero-sub">
+          Bordado, DTF, terminaciones y producción recurrente para pedidos comerciales, deportivos, promocionales e institucionales.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contacto" class="btn-primary">Cotizar pedido</a>
+          <a href="#servicios" class="btn-secondary">Qué hacemos</a>
+        </div>
+      </div>
+      <div class="hero-video">
+        <video id="heroVid1" muted playsinline disablepictureinpicture preload="auto">
+          <source src="/dtf/embroidery_clip.webm" type="video/webm" />
+        </video>
+        <video id="heroVid2" muted playsinline disablepictureinpicture preload="none">
+          <source src="/dtf/dtf_clip.webm" type="video/webm" />
+        </video>
+        <video id="heroVid3" muted playsinline disablepictureinpicture preload="none">
+          <source src="/dtf/laser_clip.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Positioning -->
+  <section class="positioning">
+    <div class="container">
+      <div class="positioning-layout">
+        <div class="positioning-text">
+          <p class="eyebrow">Publibor</p>
+          <h2>Un proveedor serio para pedidos que se repiten.</h2>
+          <p>
+            Trabajamos con marcas, distribuidores y empresas que necesitan sacar producción textil con respuesta, cumplimiento y consistencia entre corridas.
+          </p>
+        </div>
+        <aside class="positioning-aside">
+          <div class="positioning-image">
+            <img src="/stacked_tshirts.webp" alt="Lote de poleras en producción" loading="lazy" decoding="async" width="600" height="450" />
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos -->
+  <section class="logos">
+    <div class="logos-top">
+      <div class="container">
+        <p class="logos-label">Marcas que producimos para nuestros clientes</p>
+      </div>
+    </div>
+    <div class="marquee" aria-label="Logos de clientes">
+      <div class="marquee-track">
+        <img src="/logos/tesla.png" alt="Tesla" loading="lazy" />
+        <img src="/logos/aws.png" alt="AWS" loading="lazy" />
+        <img src="/logos/scania.png" alt="Scania" loading="lazy" />
+        <img src="/logos/ecocopter.png" alt="Ecocopter" loading="lazy" />
+        <img src="/logos/fach.svg" alt="FACH" loading="lazy" />
+        <img src="/logos/udd.png" alt="UDD" loading="lazy" />
+        <img src="/logos/unab.png" alt="UNAB" loading="lazy" />
+        <img src="/logos/kami_sushi.png" alt="Kami Sushi" loading="lazy" />
+        <!-- duplicate for seamless loop -->
+        <img src="/logos/tesla.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="/logos/aws.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="/logos/scania.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="/logos/ecocopter.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="/logos/fach.svg" alt="" aria-hidden="true" loading="lazy" />
+        <img src="/logos/udd.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="/logos/unab.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="/logos/kami_sushi.png" alt="" aria-hidden="true" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="servicios" class="services">
+    <div class="container">
+      <div class="services-header">
+        <p class="eyebrow">Servicios</p>
+        <h2>Lo que producimos</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service service--featured">
+          <div class="service-img">
+            <img src="/dtf_image.jpg" alt="Impresión DTF en producción" loading="lazy" decoding="async" width="600" height="338" />
+          </div>
+          <div class="service-body">
+            <h3>DTF</h3>
+            <p>Impresión directa con plotter DTF sobre poleras, polerones, bolsas TNT, bolsas de crea y más. Alta definición, colores firmes y aplicación rápida para pedidos comerciales con reposición.</p>
+          </div>
+        </article>
+        <article class="service service--featured">
+          <div class="service-img">
+            <img src="/embroidery_image.jpg" alt="Bordado e insignia con corte láser" loading="lazy" decoding="async" width="600" height="338" />
+          </div>
+          <div class="service-body">
+            <h3>Bordado y corte láser</h3>
+            <p>Bordado para uniformes, vestuario de marca, merchandising e insignias. Cuando el bordado es insignia, aplicamos corte láser para un terminado limpio y profesional.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectors -->
+  <section class="sectors">
+    <div class="container">
+      <div class="sectors-header">
+        <p class="eyebrow">Tipos de pedido</p>
+        <h2>Producción según el tipo de pedido.</h2>
+        <p class="sectors-support">Trabajamos con marcas, empresas e instituciones que necesitan resolver pedidos con objetivos, volúmenes y ritmos distintos.</p>
+      </div>
+      <div class="sectors-layout">
+        <!-- Left: featured -->
+        <article class="sector-featured">
+          <span class="sector-accent"></span>
+          <p class="sector-label">Bordado · DTF · Texturizado</p>
+          <h3>Producción adaptada a cada operación</h3>
+          <p>No todos los pedidos responden a la misma lógica. Ajustamos producción, terminaciones y continuidad según el tipo de cliente, uso final y frecuencia del pedido.</p>
+        </article>
+        <!-- Right: 2x2 -->
+        <div class="sectors-small-grid">
+          <article class="sector-small">
+            <span class="sector-accent"></span>
+            <h3>Equipos y deporte</h3>
+            <p>Series para clubes, academias, torneos y eventos.</p>
+          </article>
+          <article class="sector-small">
+            <span class="sector-accent"></span>
+            <h3>Uniformes de trabajo</h3>
+            <p>Prendas para operación diaria, atención y terreno.</p>
+          </article>
+          <article class="sector-small">
+            <span class="sector-accent"></span>
+            <h3>Merch para marcas</h3>
+            <p>Textil para venta, posicionamiento y comunidad.</p>
+          </article>
+          <article class="sector-small">
+            <span class="sector-accent"></span>
+            <h3>Campañas y activaciones</h3>
+            <p>Producción para acciones promocionales y lanzamientos.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process">
+    <div class="container">
+      <div class="process-header">
+        <p class="eyebrow">Proceso</p>
+        <h2>Del requerimiento a la entrega.</h2>
+      </div>
+      <div class="process-rail">
+        <div class="process-line" aria-hidden="true">
+          <div class="process-line-fill"></div>
+        </div>
+        <ol class="process-steps" role="list">
+          <li class="process-card" data-step="1">
+            <span class="process-marker" aria-hidden="true"></span>
+            <span class="step-num">01</span>
+            <strong>Requerimiento</strong>
+            <p>Levantamos pedido, aplicación, cantidades y contexto de uso.</p>
+          </li>
+          <li class="process-card" data-step="2">
+            <span class="process-marker" aria-hidden="true"></span>
+            <span class="step-num">02</span>
+            <strong>Cotización</strong>
+            <p>Respondemos con rapidez para definir alcance, tiempos y valores.</p>
+          </li>
+          <li class="process-card" data-step="3">
+            <span class="process-marker" aria-hidden="true"></span>
+            <span class="step-num">03</span>
+            <strong>Producción</strong>
+            <p>Ejecutamos con consistencia, control y continuidad entre corridas.</p>
+          </li>
+          <li class="process-card" data-step="4">
+            <span class="process-marker" aria-hidden="true"></span>
+            <span class="step-num">04</span>
+            <strong>Entrega o reposición</strong>
+            <p>Despachamos y dejamos base lista para futuros pedidos sin partir de cero.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credibility -->
+  <section class="credibility">
+    <div class="container">
+      <div class="cred-layout">
+        <div class="cred-left">
+          <p class="eyebrow">Por qué Publibor</p>
+          <h2>Lo que importa cuando necesitas un proveedor que responda.</h2>
+        </div>
+        <div class="cred-right">
+          <dl class="cred-list">
+            <div class="cred-item">
+              <dt>Respuesta comercial</dt>
+              <dd>Cotizamos rápido para que puedas cerrar con tu cliente.</dd>
+            </div>
+            <div class="cred-item">
+              <dt>Cumplimiento</dt>
+              <dd>Lo que se acuerda, se entrega. Plazos claros.</dd>
+            </div>
+            <div class="cred-item">
+              <dt>Consistencia</dt>
+              <dd>Misma calidad entre corridas. Sin sorpresas en la reposición.</dd>
+            </div>
+            <div class="cred-item">
+              <dt>Producción para terceros</dt>
+              <dd>Entendemos que produces para tu cliente, no para el nuestro.</dd>
+            </div>
+            <div class="cred-item">
+              <dt>Trabajo sostenido</dt>
+              <dd>Cuentas recurrentes, no pedidos sueltos.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + Contact -->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <div class="contact-header">
+        <p class="eyebrow">Contacto</p>
+        <h2>Hablemos de tu próximo pedido.</h2>
+        <p class="contact-support">Cuéntanos qué necesitas producir, en qué plazos y para qué tipo de proyecto.</p>
+      </div>
+      <div class="contact-layout">
+        <!-- Form -->
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Empresa</label>
+              <input type="text" id="company" name="company" placeholder="Nombre de tu empresa" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo</label>
+              <input type="email" id="email" name="email" placeholder="correo@empresa.cl" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" name="phone" placeholder="+56 9 ..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">¿Qué necesitas producir?</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tipo de pedido, cantidades, aplicación, plazos..." required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Enviar requerimiento</button>
+            <a href="https://wa.me/56956791655" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </form>
+        <!-- Map + Info -->
+        <div class="contact-side">
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps?q=Ureta+Cox+233,+San+Joaqu%C3%ADn,+Santiago,+Chile&output=embed"
+              width="100%"
+              height="280"
+              style="border:0;border-radius:16px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación Publibor"
+            ></iframe>
+          </div>
+          <div class="contact-info">
+            <div class="info-item">
+              <strong>Dirección</strong>
+              <p>Ureta Cox 233, San Joaquín, Santiago</p>
+            </div>
+            <div class="info-item">
+              <strong>Horario</strong>
+              <p>Lunes a viernes, 8:30 a 18:00</p>
+            </div>
+            <div class="info-item">
+              <strong>Correo</strong>
+              <p><a href="mailto:publiborchile@gmail.com">publiborchile@gmail.com</a></p>
+            </div>
+            <div class="info-item">
+              <strong>Teléfono</strong>
+              <p><a href="tel:+56956791655">+56 9 5679 1655</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="brand brand--footer" aria-label="PubliborChile">
+            <img src="/logos/publibor_pb.svg" alt="" class="brand-icon" width="24" height="24" />
+            <span class="brand-name"><strong>publibor</strong>chile</span>
+          </a>
+          <p>Producción textil comercial</p>
+        </div>
+        <div class="footer-contact">
+          <p>Ureta Cox 233, San Joaquín, Santiago</p>
+          <p>Lunes a viernes, 8:30 a 18:00</p>
+        </div>
+        <div class="footer-contact">
+          <p><a href="mailto:publiborchile@gmail.com">publiborchile@gmail.com</a></p>
+          <p><a href="tel:+56956791655">+56 9 5679 1655</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Publibor</p>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  :root {
+    --gold: #f3c242;
+    --black: #000;
+    --near-black: #0c0c0c;
+    --white: #fff;
+    --off-white: #f6f5f3;
+    --gray-100: #edeceb;
+    --gray-200: #dddcda;
+    --gray-400: #a19d98;
+    --gray-600: #5c5854;
+    --gray-800: #2a2826;
+    --font: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --max-w: 1140px;
+    --py: clamp(3.5rem, 10vw, 8rem);
+  }
+
+  .container {
+    max-width: var(--max-w);
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .container { padding-inline: 1.5rem; }
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+  }
+
+  /* ── Header ── */
+  .site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 1.25rem 0;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+  }
+
+  .brand-icon {
+    display: block;
+  }
+
+  .brand-name {
+    font-family: "Chakra Petch", system-ui, sans-serif;
+    font-size: 1.05rem;
+    color: var(--white);
+    letter-spacing: 0.02em;
+    text-transform: lowercase;
+  }
+
+  @media (min-width: 640px) {
+    .brand-name { font-size: 1.3rem; }
+  }
+
+  .brand-name strong {
+    font-weight: 700;
+  }
+
+  .header-cta {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+    background: var(--gold);
+    padding: 0.55rem 1rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    transition: background 0.2s;
+  }
+
+  @media (min-width: 640px) {
+    .header-cta {
+      font-size: 0.72rem;
+      padding: 0.6rem 1.4rem;
+    }
+  }
+
+  .header-cta:hover { background: #e5b63b; }
+
+  /* Footer brand */
+  .brand--footer .brand-name {
+    font-size: 0.9rem;
+    color: var(--white);
+  }
+
+  /* ── Buttons ── */  .btn-primary,
+  .btn-secondary {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    padding: 0.95rem 2.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--black);
+  }
+  .btn-primary:hover { background: #e5b63b; }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--gray-800);
+    border: 1px solid var(--gray-200);
+  }
+  .btn-secondary:hover { border-color: var(--gray-400); }
+
+  /* ── Hero ── */
+  .hero {
+    background: var(--near-black);
+    color: var(--white);
+  }
+
+  .hero-inner {
+    max-width: var(--max-w);
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 80vh;
+    min-height: 80dvh;
+    align-items: center;
+  }
+
+  @media (min-width: 820px) {
+    .hero-inner {
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+  }
+
+  .hero-content {
+    padding: clamp(4rem, 10vw, 7rem) 0;
+    max-width: 540px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.06;
+    letter-spacing: -0.03em;
+  }
+  .rotating-wrapper {
+    display: block;
+    height: 1.1em;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .rotating-words {
+    display: block;
+    animation: rotate-words 6s infinite;
+  }
+
+  .rotating-word {
+    display: block;
+    height: 1.1em;
+    line-height: 1.1;
+    color: var(--gold);
+  }
+
+  @keyframes rotate-words {
+    0%, 26% { transform: translateY(0); }
+    33%, 59% { transform: translateY(-1.1em); }
+    66%, 92% { transform: translateY(-2.2em); }
+    100% { transform: translateY(0); }
+  }
+
+  .hero-sub {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--gray-400);
+    max-width: 440px;
+  }
+
+  .hero-ctas {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .hero .btn-secondary {
+    color: var(--white);
+    border-color: rgba(255,255,255,0.15);
+  }
+  .hero .btn-secondary:hover { border-color: rgba(255,255,255,0.35); }
+
+  /* Hero video */
+  .hero-video {
+    display: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media (min-width: 820px) {
+    .hero-video {
+      display: block;
+      align-self: stretch;
+    }
+  }
+
+  .hero-video video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+
+  .hero-video video.active {
+    opacity: 1;
+  }
+
+  /* ── Positioning ── */
+  .positioning {
+    padding: var(--py) 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-100);
+  }
+
+  .positioning-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    .positioning-layout {
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 4rem;
+      align-items: center;
+    }
+  }
+
+  .positioning-text { max-width: 560px; }
+
+  .positioning h2 {
+    font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.25rem;
+    color: var(--black);
+  }
+
+  .positioning p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--gray-600);
+  }
+
+  .positioning-image {
+    aspect-ratio: 4/3;
+    background: var(--gray-100);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .positioning-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ── Logos ── */
+  .logos {
+    padding: 2.5rem 0;
+    background: var(--white);
+    border-top: 1px solid var(--gray-100);
+    border-bottom: 1px solid var(--gray-100);
+    overflow: hidden;
+  }
+
+  .logos-top {
+    margin-bottom: 1.5rem;
+  }
+
+  .logos-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+  }
+
+  .marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+  }
+
+  .marquee-track img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.75;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 768px) {
+    .marquee-track img {
+      height: 58px;
+    }
+    .marquee-track {
+      gap: 5rem;
+    }
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+
+  /* ── Services ── */
+  .services {
+    padding: var(--py) 0;
+    background: var(--off-white);
+  }
+
+  .services-header {
+    margin-bottom: 3rem;
+  }
+
+  .services h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--black);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--gray-200);
+  }
+
+  .service {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: var(--off-white);
+  }
+
+  @media (min-width: 640px) {
+    .services-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .service-img {
+    aspect-ratio: 16/10;
+    background: var(--gray-100);
+  }
+
+  .service-body {
+    padding: 1.5rem 1.5rem 2rem 0;
+  }
+
+  @media (min-width: 640px) {
+    .service-body {
+      padding: 1.5rem;
+    }
+  }
+
+  .service h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.4rem;
+    color: var(--black);
+  }
+
+  .service p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--gray-600);
+  }
+
+  /* Featured service (DTF) */
+  .service--featured {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: 640px) {
+    .service--featured {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .service--featured .service-img {
+    aspect-ratio: 16/9;
+  }
+
+  .service--featured .service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .service--featured .service-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+  }
+</style>
+
+<style>
+  /* ── Sectors ── */
+  .sectors {
+    padding: var(--py) 0;
+    background: #f3f2ef;
+    border-top: 1px solid var(--gray-100);
+    border-bottom: 1px solid var(--gray-100);
+  }
+
+  .sectors-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .sectors h2 {
+    font-size: clamp(1.4rem, 2.8vw, 1.85rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--black);
+  }
+
+  .sectors-support {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray-600);
+    max-width: 560px;
+  }
+
+  /* Shared card base */
+  .sector-accent {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: transparent;
+    margin-bottom: 1.25rem;
+    transition: background 0.25s;
+  }
+
+  /* Layout: featured left + 2x2 right */
+  .sectors-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .sectors-layout {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+
+  /* Featured block */
+  .sector-featured {
+    background: var(--white);
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: border-color 0.2s;
+  }
+
+  .sector-featured:hover { border-color: var(--gray-200); }
+  .sector-featured:hover .sector-accent { background: var(--gold); }
+
+  .sector-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    margin-bottom: 1rem;
+  }
+
+  .sector-featured h3 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--black);
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .sector-featured > p:last-child {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--gray-600);
+  }
+
+  /* Small 2x2 grid */
+  .sectors-small-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .sector-small {
+    background: var(--white);
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: border-color 0.2s;
+  }
+
+  .sector-small:hover { border-color: var(--gray-200); }
+  .sector-small:hover .sector-accent { background: var(--gold); }
+
+  .sector-small h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.01em;
+  }
+
+  .sector-small p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--gray-600);
+  }
+
+  /* Bottom full-width block */
+  .sector-wide {
+    background: var(--white);
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 16px;
+    padding: 1.75rem 2rem;
+    transition: border-color 0.2s;
+  }
+
+  .sector-wide:hover { border-color: var(--gray-200); }
+  .sector-wide:hover .sector-accent { background: var(--gold); }
+
+  .sector-wide-inner {
+    max-width: 700px;
+  }
+
+  .sector-wide h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 0.35rem;
+    letter-spacing: -0.01em;
+  }
+
+  .sector-wide p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--gray-600);
+  }
+
+  /* ── Process ── */
+  .process {
+    padding: var(--py) 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-100);
+    overflow: hidden;
+  }
+
+  .process-header { margin-bottom: 3.5rem; }
+
+  .process h2 {
+    font-size: clamp(1.4rem, 2.8vw, 1.85rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--black);
+  }
+
+  /* Rail container */
+  .process-rail {
+    position: relative;
+  }
+
+  /* Connector line */
+  .process-line {
+    display: none;
+  }
+
+  @media (min-width: 900px) {
+    .process-line {
+      display: block;
+      position: absolute;
+      top: 18px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--gray-200);
+      z-index: 0;
+    }
+
+    .process-line-fill {
+      height: 100%;
+      width: 0%;
+      background: var(--gold);
+      transition: width 0.5s ease;
+    }
+  }
+
+  /* Steps */
+  .process-steps {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 0.5rem;
+  }
+
+  .process-steps::-webkit-scrollbar { display: none; }
+
+  @media (min-width: 900px) {
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      overflow: visible;
+    }
+  }
+
+  /* Card */
+  .process-card {
+    position: relative;
+    z-index: 1;
+    background: var(--off-white);
+    border: 1px solid var(--gray-100);
+    border-radius: 16px;
+    padding: 2rem 1.5rem 1.75rem;
+    min-width: 260px;
+    scroll-snap-align: start;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: processReveal 0.5s ease forwards;
+  }
+
+  .process-card:nth-child(1) { animation-delay: 0.1s; }
+  .process-card:nth-child(2) { animation-delay: 0.2s; }
+  .process-card:nth-child(3) { animation-delay: 0.3s; }
+  .process-card:nth-child(4) { animation-delay: 0.4s; }
+
+  @keyframes processReveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .process-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--gray-200);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  }
+
+  /* Marker dot */
+  .process-marker {
+    display: none;
+  }
+
+  @media (min-width: 900px) {
+    .process-marker {
+      display: block;
+      position: absolute;
+      top: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--gray-200);
+      border: 3px solid var(--white);
+      transition: background 0.25s;
+    }
+
+    .process-card:hover .process-marker {
+      background: var(--gold);
+    }
+
+    .process-steps {
+      padding-top: 2.5rem;
+    }
+  }
+
+  .step-num {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.12em;
+    margin-bottom: 0.8rem;
+  }
+
+  .process-card strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+    color: var(--black);
+  }
+
+  .process-card p {
+    font-size: 0.84rem;
+    line-height: 1.55;
+    color: var(--gray-600);
+  }
+
+  /* ── Credibility ── */
+  .credibility {
+    background: var(--near-black);
+    color: var(--white);
+    padding: var(--py) 0;
+  }
+
+  .cred-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    .cred-layout {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+  }
+
+  .cred-left h2 {
+    font-size: clamp(1.4rem, 2.8vw, 1.85rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .cred-list { display: grid; gap: 0; }
+
+  .cred-item {
+    padding: 1.1rem 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .cred-item:last-child {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .cred-item dt {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+  }
+
+  .cred-item dd {
+    margin: 0;
+    font-size: 0.84rem;
+    line-height: 1.5;
+    color: var(--gray-400);
+  }
+
+  /* ── Contact ── */
+  .contact {
+    padding: var(--py) 0;
+    background: var(--off-white);
+    border-top: 1px solid var(--gray-100);
+  }
+
+  .contact-header {
+    margin-bottom: 3rem;
+  }
+
+  .contact h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    color: var(--black);
+  }
+
+  .contact-support {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray-600);
+    max-width: 480px;
+  }
+
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .contact-layout {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+  }
+
+  /* Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 480px) {
+    .form-row { grid-template-columns: 1fr 1fr; }
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .form-group label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--gray-800);
+    letter-spacing: 0.02em;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-family: var(--font);
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    background: var(--white);
+    color: var(--black);
+    transition: border-color 0.2s;
+    outline: none;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: var(--gold);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    padding: 0.95rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #25d366;
+    color: var(--white);
+    border-radius: 0;
+    transition: background 0.2s;
+  }
+
+  .btn-whatsapp:hover { background: #1fb855; }
+
+  /* Map + Info */
+  .contact-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-map {
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--gray-100);
+  }
+
+  .contact-map iframe {
+    display: block;
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .info-item strong {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    margin-bottom: 0.25rem;
+  }
+
+  .info-item p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--gray-800);
+  }
+
+  .info-item a {
+    color: var(--gray-800);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .info-item a:hover { color: var(--black); }
+
+  /* ── Footer ── */
+  .site-footer {
+    background: var(--near-black);
+    color: var(--gray-400);
+    padding: 3rem 0 2rem;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  @media (min-width: 768px) {
+    .footer-top {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+    }
+  }
+
+  .footer-brand p {
+    font-size: 0.76rem;
+    margin-top: 0.4rem;
+    color: var(--gray-600);
+  }
+
+  .footer-contact p {
+    font-size: 0.82rem;
+    line-height: 1.8;
+    color: var(--gray-400);
+  }
+
+  .footer-contact a {
+    color: var(--gray-400);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-contact a:hover {
+    color: var(--white);
+  }
+
+  .footer-bottom {
+    padding-top: 1.5rem;
+  }
+
+  .footer-copy {
+    font-size: 0.7rem;
+    color: var(--gray-600);
+  }
+</style>
+
+<script>
+  // Hero video rotation
+  const vids = [
+    document.getElementById("heroVid1") as HTMLVideoElement,
+    document.getElementById("heroVid2") as HTMLVideoElement,
+    document.getElementById("heroVid3") as HTMLVideoElement,
+  ];
+
+  let current = 0;
+
+  function playNext() {
+    vids.forEach((v) => v.classList.remove("active"));
+    const active = vids[current];
+    active.classList.add("active");
+    active.currentTime = 0;
+    active.play();
+
+    active.onended = () => {
+      current = (current + 1) % vids.length;
+      playNext();
+    };
+  }
+
+  playNext();
+
+  // Process rail hover connector
+  const cards = document.querySelectorAll<HTMLElement>(".process-card");
+  const fill = document.querySelector<HTMLElement>(".process-line-fill");
+
+  if (fill && cards.length) {
+    cards.forEach((card) => {
+      card.addEventListener("mouseenter", () => {
+        const step = Number(card.dataset.step) || 1;
+        fill.style.width = `${(step / cards.length) * 100}%`;
+      });
+      card.addEventListener("mouseleave", () => {
+        fill.style.width = "0%";
+      });
+    });
+  }
+</script>
