@@ -255,8 +255,8 @@ import Layout from "../layouts/Layout.astro";
             <iframe
               src="https://www.google.com/maps?q=Ureta+Cox+233,+San+Joaqu%C3%ADn,+Santiago,+Chile&output=embed"
               width="100%"
-              height="280"
-              style="border:0;border-radius:16px;"
+              height="240"
+              style="border:0;border-radius:12px;"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -693,14 +693,16 @@ import Layout from "../layouts/Layout.astro";
   .marquee-track {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: 3rem;
     width: max-content;
-    animation: scroll 25s linear infinite;
+    animation: scroll 20s linear infinite;
+    will-change: transform;
   }
 
   .marquee-track img {
     height: 36px;
     width: auto;
+    min-width: 60px;
     object-fit: contain;
     opacity: 0.75;
     flex-shrink: 0;
@@ -709,6 +711,7 @@ import Layout from "../layouts/Layout.astro";
   @media (min-width: 768px) {
     .marquee-track img {
       height: 58px;
+      min-width: 80px;
     }
     .marquee-track {
       gap: 5rem;
@@ -737,7 +740,11 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .floor-header {
-    padding: var(--py) 0 2.5rem;
+    padding: var(--py) 0 2rem;
+  }
+
+  @media (min-width: 640px) {
+    .floor-header { padding-bottom: 2.5rem; }
   }
 
   .floor h2 {
@@ -801,11 +808,12 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .tile--sm {
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
   }
 
   @media (min-width: 640px) {
     .tile--lg { aspect-ratio: 16/10; }
+    .tile--sm { aspect-ratio: 4/3; }
   }
 
   /* Overlay */
@@ -868,9 +876,19 @@ import Layout from "../layouts/Layout.astro";
     line-height: 1.5;
     color: rgba(255,255,255,0.7);
     max-width: 360px;
-    opacity: 0;
-    transform: translateY(6px);
-    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  @media (min-width: 960px) {
+    .tile--sm p {
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .tile--sm:hover p {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .tile--lg p {
@@ -988,7 +1006,7 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .tray-big {
-    font-size: clamp(5rem, 10vw, 7.5rem);
+    font-size: clamp(4rem, 10vw, 7.5rem);
     font-weight: 800;
     line-height: 0.85;
     letter-spacing: -0.04em;
@@ -1034,8 +1052,12 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .tray-item {
-    padding: 1.75rem 0;
+    padding: 1.5rem 0;
     border-top: 1px solid var(--gray-200);
+  }
+
+  @media (min-width: 768px) {
+    .tray-item { padding: 1.75rem 0; }
   }
 
   .tray-item:last-child {
@@ -1352,6 +1374,10 @@ import Layout from "../layouts/Layout.astro";
     color: var(--gray-400);
     text-decoration: none;
     transition: color 0.2s;
+    display: inline-block;
+    padding: 0.15rem 0;
+    min-height: 44px;
+    line-height: 2;
   }
 
   .footer-contact a:hover {
