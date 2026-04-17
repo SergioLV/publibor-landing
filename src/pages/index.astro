@@ -6,6 +6,13 @@ import Layout from "../layouts/Layout.astro";
   title="Publibor — Bordado, DTF y producción textil"
   description="Proveedor textil para marcas, empresas y revendedores. Bordado, DTF, texturizado y producción recurrente con respuesta comercial y cumplimiento."
 >
+  <!-- Announcement bar -->
+  <div class="announce-bar">
+    <div class="container announce-inner">
+      <p>Cotizaciones respondidas en menos de 1 hora — <a href="https://wa.me/56956791655" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a></p>
+    </div>
+  </div>
+
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
@@ -401,10 +408,39 @@ import Layout from "../layouts/Layout.astro";
     margin-bottom: 1.2rem;
   }
 
+  /* ── Announcement bar ── */
+  .announce-bar {
+    background: var(--gold);
+    padding: 0.5rem 0;
+    position: relative;
+    z-index: 20;
+  }
+
+  .announce-inner {
+    text-align: center;
+  }
+
+  .announce-bar p {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--black);
+  }
+
+  .announce-bar a {
+    color: var(--black);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .announce-bar a:hover {
+    text-decoration-thickness: 2px;
+  }
+
   /* ── Header ── */
   .site-header {
     position: absolute;
-    top: 0;
+    top: 28px;
     left: 0;
     right: 0;
     z-index: 10;
@@ -412,7 +448,10 @@ import Layout from "../layouts/Layout.astro";
   }
 
   @media (min-width: 640px) {
-    .site-header { padding: 1.5rem 0; }
+    .site-header {
+      top: 30px;
+      padding: 1.5rem 0;
+    }
   }
 
   .header-inner {
