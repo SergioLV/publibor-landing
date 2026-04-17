@@ -8,7 +8,7 @@ interface Props {
 const {
   title = "PubliborChile",
   description = "PubliborChile - Landing",
-  ogImage = "/logos/publibor_pb.svg",
+  ogImage = "/pb_logo.svg",
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://publiborchile.cl");
@@ -31,7 +31,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://publibor
     <meta property="og:locale" content="es_CL" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/logos/publibor_pb.svg" />
+    <link rel="icon" type="image/svg+xml" href="/pb_logo.svg" />
 
     <!-- Font: display swap to avoid render blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
