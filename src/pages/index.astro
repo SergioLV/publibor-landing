@@ -695,7 +695,7 @@ import Layout from "../layouts/Layout.astro";
     align-items: center;
     gap: 3rem;
     width: fit-content;
-    animation: marquee-scroll 6s linear infinite;
+    animation: marquee-scroll 12s linear infinite;
   }
 
   .marquee-track img {
@@ -721,12 +721,6 @@ import Layout from "../layouts/Layout.astro";
   @keyframes marquee-scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .marquee-track {
-      animation-duration: 60s;
-    }
   }
 
   /* ── Production Floor ── */
