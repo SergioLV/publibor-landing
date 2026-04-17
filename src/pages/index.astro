@@ -63,6 +63,10 @@ import Layout from "../layouts/Layout.astro";
           <p>
             Trabajamos con marcas, distribuidores y empresas que necesitan sacar producción textil con respuesta, cumplimiento y consistencia entre corridas.
           </p>
+          <div class="positioning-ctas">
+            <a href="#contacto" class="btn-primary">Cotizar pedido</a>
+            <a href="https://wa.me/56956791655" target="_blank" rel="noopener noreferrer" class="btn-secondary">WhatsApp</a>
+          </div>
         </div>
         <aside class="positioning-aside">
           <div class="positioning-image">
@@ -183,6 +187,9 @@ import Layout from "../layouts/Layout.astro";
           <p class="tray-anchor-text">
             Desarrollando capacidad productiva en bordado, DTF y personalización para el mercado comercial e institucional chileno.
           </p>
+          <div class="tray-ctas">
+            <a href="#contacto" class="btn-primary">Conversemos</a>
+          </div>
         </div>
         <!-- Right: evidence list -->
         <div class="tray-evidence">
@@ -648,6 +655,19 @@ import Layout from "../layouts/Layout.astro";
     color: var(--gray-600);
   }
 
+  .positioning-ctas {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  @media (min-width: 480px) {
+    .positioning-ctas {
+      flex-direction: row;
+    }
+  }
+
   .positioning-image {
     aspect-ratio: 4/3;
     background: var(--gray-100);
@@ -1032,6 +1052,10 @@ import Layout from "../layouts/Layout.astro";
     max-width: 340px;
     border-top: 2px solid var(--gold);
     padding-top: 1.25rem;
+  }
+
+  .tray-ctas {
+    margin-top: 1.5rem;
   }
 
   /* Evidence (right) */
