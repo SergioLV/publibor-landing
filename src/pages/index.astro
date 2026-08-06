@@ -102,7 +102,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="bento-grid">
       <!-- Row 1: DTF (60%) + Bordado (40%) -->
       <article class="bento-card bento-card--dtf">
-        <img src="/images/dtfam.jpg" alt="DTF Industrial" loading="eager" fetchpriority="high" />
+        <img src="/images/dtfam.webp" alt="DTF Industrial" loading="eager" fetchpriority="high" />
         <div class="bento-card-content">
           <span class="bento-label">Servicio principal</span>
           <h3>DTF Industrial de Alto Metraje</h3>
@@ -110,7 +110,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </article>
       <article class="bento-card bento-card--bordado">
-        <img src="/images/bordadora.jpg" alt="Bordado multicabezal" loading="lazy" />
+        <img src="/images/bordadora.webp" alt="Bordado multicabezal" loading="lazy" />
         <div class="bento-card-content">
           <span class="bento-label">Servicio principal</span>
           <h3>Bordado Multicabezal</h3>
@@ -119,21 +119,21 @@ import Layout from "../layouts/Layout.astro";
       </article>
       <!-- Row 2: Láser + Sublimación + Especiales -->
       <article class="bento-card bento-card--sm">
-        <img src="/images/laser.jpg" alt="Corte láser" loading="lazy" />
+        <img src="/images/laser.webp" alt="Corte láser" loading="lazy" />
         <div class="bento-card-content">
           <h3>Corte Láser</h3>
           <p>Terminación limpia y profesional</p>
         </div>
       </article>
       <article class="bento-card bento-card--sm">
-        <img src="/images/sublimacion.jpg" alt="Sublimación" loading="lazy" />
+        <img src="/images/sublimacion.webp" alt="Sublimación" loading="lazy" />
         <div class="bento-card-content">
           <h3>Sublimación</h3>
           <p>Full color en poliéster y sintéticos</p>
         </div>
       </article>
       <article class="bento-card bento-card--sm">
-        <img src="/images/calandra.jpg" alt="Especiales" loading="lazy" />
+        <img src="/images/calandra.webp" alt="Especiales" loading="lazy" />
         <div class="bento-card-content">
           <h3>Especiales</h3>
           <p>Calandra, UV, texturizado y técnicas mixtas</p>
@@ -364,12 +364,11 @@ import Layout from "../layouts/Layout.astro";
         <div class="contact-side">
           <div class="contact-map">
             <iframe
-              src="https://www.google.com/maps?q=Ureta+Cox+233,+San+Joaqu%C3%ADn,+Santiago,+Chile&output=embed"
+              data-src="https://www.google.com/maps?q=Ureta+Cox+233,+San+Joaqu%C3%ADn,+Santiago,+Chile&output=embed"
               width="100%"
               height="240"
               style="border:0;border-radius:12px;"
               allowfullscreen=""
-              loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               title="Ubicación Publibor"
             ></iframe>
@@ -2035,7 +2034,8 @@ import Layout from "../layouts/Layout.astro";
   .contact-map {
     border-radius: 12px;
     overflow: hidden;
-    background: var(--gray-100);
+    background: var(--gray-800);
+    min-height: 240px;
   }
 
   @media (min-width: 640px) {
@@ -2223,7 +2223,13 @@ import Layout from "../layouts/Layout.astro";
     const active = vids[current];
     active.classList.add("active");
     active.currentTime = 0;
-    active.play();
+    
+    const playPromise = active.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Autoplay blocked, silently ignore
+      });
+    }
 
     active.onended = () => {
       current = (current + 1) % vids.length;
@@ -2404,4 +2410,21 @@ import Layout from "../layouts/Layout.astro";
   }, { rootMargin: '200px' });
 
   lazyVideos.forEach(video => videoObserver.observe(video));
+
+  // Lazy load map iframe
+  const mapIframe = document.querySelector('.contact-map iframe[data-src]') as HTMLIFrameElement;
+  if (mapIframe) {
+    const mapObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const iframe = entry.target as HTMLIFrameElement;
+          if (iframe.dataset.src) {
+            iframe.src = iframe.dataset.src;
+          }
+          mapObserver.unobserve(iframe);
+        }
+      });
+    }, { rootMargin: '300px' });
+    mapObserver.observe(mapIframe);
+  }
 </script>

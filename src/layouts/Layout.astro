@@ -34,9 +34,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://publibor
     <link rel="icon" type="image/svg+xml" href="/pb_logo.svg" />
 
     <!-- Preload critical assets -->
-    <link rel="preload" href="/dtf/embroidery_clip.webm" as="video" type="video/webm" />
-    <link rel="preload" href="/images/dtfam.jpg" as="image" fetchpriority="high" />
+    <link rel="preload" href="/fonts/plus-jakarta-sans-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/plus-jakarta-sans-700.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/images/dtfam.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/dtf/embroidery_clip.webm" as="video" type="video/webm" />
 
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
