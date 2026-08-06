@@ -33,15 +33,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://publibor
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/pb_logo.svg" />
 
-    <!-- Font: display swap to avoid render blocking -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-    />
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/dtf/embroidery_clip.webm" as="video" type="video/webm" />
+    <link rel="preload" href="/images/dtfam.jpg" as="image" fetchpriority="high" />
+    <link rel="preload" href="/fonts/plus-jakarta-sans-700.woff2" as="font" type="font/woff2" crossorigin />
 
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -52,6 +47,43 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://publibor
 </html>
 
 <style is:global>
+  /* Self-hosted Plus Jakarta Sans */
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/plus-jakarta-sans-400.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/plus-jakarta-sans-500.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/plus-jakarta-sans-600.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/plus-jakarta-sans-700.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts/plus-jakarta-sans-800.woff2') format('woff2');
+  }
+
   *,
   *::before,
   *::after {
@@ -61,7 +93,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://publibor
   }
 
   html {
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
